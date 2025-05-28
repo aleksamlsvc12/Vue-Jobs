@@ -1,9 +1,24 @@
 <script setup>
-  import {defineProps} from 'vue';
+  import {defineProps, ref, computed} from 'vue';
 
-  defineProps({
+  const props = defineProps({
     job: Object
   });
+
+  const showFullDesc = ref(false);
+
+  const toggleFullDesc = () => {
+    showFullDesc.value = !showFullDesc.value;
+  };
+
+  const truncatedDesc = computed(()=>{
+    let desc = props.job.description;
+    if(!showFullDesc.value){
+      desc = desc.substring(0,90) + '...';
+    }
+    return desc;
+  });
+
 </script>
 
 <template>
@@ -15,7 +30,8 @@
               </div>
 
               <div class="mb-5">
-                {{job.description}}
+                <div>{{truncatedDesc}}</div>
+                <button @click="toggleFullDesc()" class="text-green-500 hover:text-green-600 mb-5">{{showFullDesc ? 'Less' : 'More'}}</button>
               </div>
 
               <h3 class="text-green-500 mb-2">{{job.salary}} / Year</h3>
