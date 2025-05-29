@@ -137,19 +137,6 @@
       }
     },
     {
-      "id": "bab9",
-      "title": "eee",
-      "type": "Full-Time",
-      "location": "eeeee",
-      "description": "eeee",
-      "salary": "$125K - $150K",
-      "company": {
-        "name": "eeeeee",
-        "description": "eeee",
-        "conctactEmail": "eee@gmal.com"
-      }
-    },
-    {
       "id": "8989",
       "title": "Lista lista lista",
       "type": "Internship",
@@ -160,20 +147,6 @@
         "name": "Nista",
         "description": "Opet nista",
         "conctactEmail": "aki@gmail.com"
-      }
-    },
-    {
-      "id": "684f",
-      "title": "fff",
-      "type": "Full-Time",
-      "location": "ffff",
-      "description": "fff",
-      "salary": "$125K - $150K",
-      "company": {
-        "name": "fff",
-        "description": "fff",
-        "contactEmail": "fff@gams.com",
-        "contactPhone": "123123123"
       }
     }
   ]
